@@ -1,0 +1,83 @@
+%YAML:1.0
+---
+camL:
+   cameraMatrix: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 5.0507410877122602e+03, 0., 1.6213506018876822e+03, 0.,
+          5.0538265220488020e+03, 1.6241548793253617e+03, 0., 0., 1. ]
+   imgSize: [ 3100, 3100 ]
+   distortionModel: PERSPECTIVE
+   distCoeffs: !!opencv-matrix
+      rows: 1
+      cols: 5
+      dt: d
+      data: [ -4.1069097217987759e-02, -2.6978245224315922e-01,
+          1.5337128830060060e-03, 5.1192326249908568e-04,
+          9.0730597890798648e-01 ]
+   meanReprojErr: 2.8745010495185852e-01
+camNIR:
+   cameraMatrix: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 5.0533617962193521e+03, 0., 1.6124306967266002e+03, 0.,
+          5.0567339214817575e+03, 1.4766392353243634e+03, 0., 0., 1. ]
+   imgSize: [ 3100, 3100 ]
+   distortionModel: PERSPECTIVE
+   distCoeffs: !!opencv-matrix
+      rows: 1
+      cols: 5
+      dt: d
+      data: [ -2.4382204283977655e-02, -2.4165068176981147e-01,
+          -8.2145506597033837e-04, -8.2788955108398005e-04,
+          6.8994504162755232e-01 ]
+   meanReprojErr: 3.8918873667716980e-01
+camR:
+   cameraMatrix: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 5.0588143576173115e+03, 0., 1.6131695930762530e+03, 0.,
+          5.0617824169389760e+03, 1.5153409126330721e+03, 0., 0., 1. ]
+   imgSize: [ 3100, 3100 ]
+   distortionModel: PERSPECTIVE
+   distCoeffs: !!opencv-matrix
+      rows: 1
+      cols: 5
+      dt: d
+      data: [ -2.5433562240012843e-02, -2.2664710885696335e-01,
+          2.4448548799184367e-04, 6.1180805436594928e-04,
+          4.7112358128543708e-01 ]
+   meanReprojErr: 2.8758099675178528e-01
+StereoPairL_NIR:
+   R: !!opencv-matrix
+      rows: 3
+      cols: 1
+      dt: d
+      data: [ -2.2971027529679394e-03, 1.3130737284947718e-03,
+          -4.3470584989646486e-04 ]
+   T: !!opencv-matrix
+      rows: 3
+      cols: 1
+      dt: d
+      data: [ -2.9834778087900155e+01, -5.7755955531629721e-01,
+          -1.8576880731743319e+00 ]
+   meanReprojErr: 3.6480423808097839e-01
+StereoPairL_R:
+   R: !!opencv-matrix
+      rows: 3
+      cols: 1
+      dt: d
+      data: [ -2.1577695688713349e-03, -1.0357418404854382e-03,
+          3.6866760878588253e-04 ]
+   T: !!opencv-matrix
+      rows: 3
+      cols: 1
+      dt: d
+      data: [ -6.0247163676533155e+01, -1.1770286225266271e+00,
+          4.9474921153483076e-01 ]
+   meanReprojErr: 3.5629254579544067e-01
+Serial number: 444302
+Calibration date: "2024-11-06 10-04-59"
