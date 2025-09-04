@@ -61,15 +61,21 @@ class CameraCalibration:
         # For our chessboard, it leads to (0,0,0), (40,0,0), (80,0,0), ..., (0,1,0)
         object_points = object_points * self.CHESSBOARD_CELLSIZE
 
-        # Initialization of the Tableaux de stockage des points objets et images pour toutes les images.
-        object_points_list = []  # Points 3d dans le monde réel
-        image_points_list = []  # Points 2d dans le plan image
+        # Initialization of the lists used for storing the whole object points and images points for all images.
+        # List of 3d points in real world
+        object_points_list = []  
+        # List of 2d points in the image plan
+        image_points_list = []  
+        # List of the retained images by the cv.findChessboardCorners function
         success_images_list = (
             []
-        )  # Liste des images prises en compte par la fonction de recherche des coins de l'échiquier
+        )        
+        # List of the rejected images by the cv.findChessboardCorners function
         missed_images_list = (
             []
-        )  # Liste des images rejetées par la fonction de recherche des coins de l'échiquier
+        )
+
+        # Initialization of the needed variables
         camera_matrix = []        
         roi = []
         dist_coefs = []
@@ -79,9 +85,9 @@ class CameraCalibration:
 
         ret = False
 
-        # Liste des images à traiter
+        # List of the chessboard images to be processed
+
         images_list = glob.glob(image_path + "/" + f"*Camera*.{image_type}")
-        # images_list         = glob.glob(image_path + "/" + 'camera*.jpg')
         images_list.sort()
 
         if len(images_list) > 0:
@@ -92,7 +98,7 @@ class CameraCalibration:
             log_file.write(log_line)
 
             cnt = 0
-            for img_name in images_list:  # [:len(images_list)]:
+            for img_name in images_list:
 
                 print("Entering image " + img_name)
 
