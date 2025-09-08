@@ -4,11 +4,11 @@ Install Jupyter in in your global python environment : from a cmd shell, run :
 
 pip install notebook
 
-Create or select a folder on your computer, in which the kernel will be installed :
+Create or select a folder "stereo-kernel" on your computer, whereever you want, in which the kernel will be installed :
 
-For instance, if on Windows, HOME = "HOME" or on Linux, HOME : "/home/buddy"
+For instance, if on Windows, it might be located here : HOME = "C:\Users\buddy" or on Linux, HOME : "/home/buddy"
 
-Create :
+After having creating it, you might have a folder here :
 HOME\stereo-kernel
 
 Go to this folder, and from a cmd shell, create a new virtual environement :
