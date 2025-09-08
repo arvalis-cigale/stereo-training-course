@@ -1,13 +1,13 @@
 """
-Calibration class for a single camera and a stereo pair
-juillet 2020
-"""
+"Extraction of 3D information from binocular images"
+EPPS Training School 12.09.2025
+license under CC By NC 4.0
 
 __author__ = "Samuel Thomas"
 __email__ = "s.thomas@arvalis.fr"
 __status__ = "Production"
 __version__ = "1.0"
-
+"""
 
 import glob as glob
 import os
