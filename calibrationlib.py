@@ -335,6 +335,8 @@ class CameraCalibration:
             criteria,
         )
 
+        print("Reprojection error of the stereo pair = ", str(ret))
+        
         return (
             ret,
             camera_matrix_cam1_stereo,
