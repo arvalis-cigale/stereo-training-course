@@ -1,7 +1,7 @@
 """
 "Extraction of 3D information from binocular images"
 EPPS Training School 12.09.2025
-license under CC By NC 4.0
+licensed under CC By NC 4.0
 
 __author__ = "Samuel Thomas"
 __email__ = "s.thomas@arvalis.fr"
@@ -186,11 +186,6 @@ class CameraCalibration:
                         log_file.write(log_line)
 
                 else:
-                    # Si la recherche n'a pas abouti, on ajoute l'id de l'image courante (i.e.
-                    # juste l'index de l'image dans la série, sans le 'CameraX_' ,pour matcher
-                    # facilement les images issues de la première caméra avce celles de la seconde).
-                    # à la liste des images non prises en compte / à ne pas prendre en compte
-                    # pour la suite
                     # If the search was unsuccessful, add the id of the current image (i.e.
                     # just the index of the image in the series, without “CameraX_”, to easily match
                     # images from the first camera with those from the second) to the list of images
