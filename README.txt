@@ -1,5 +1,9 @@
 Requires python 3.11 (not more, for compatibility with open3d package)
 
+For an offline installation on your own PC :
+
+Download the "03_stereo_imaging" project from the Jupyterhub (or Github) repo
+
 Install Jupyter in in your global python environment : from a cmd shell, run :
 
 pip install notebook
